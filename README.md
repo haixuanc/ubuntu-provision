@@ -14,6 +14,7 @@ sudo ./bootstrap.sh
 - Essential linux commandline softwares
 - Oh-my-zsh
 - Vim
+- Basic vim configuration
 - Pathogen (vim plugin manager)
 - Vim plugins: solarized color theme, NERDTree
 - Git
