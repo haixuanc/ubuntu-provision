@@ -138,6 +138,10 @@ else
 fi
 echo "------------------------------------------------------------------------"
 
+# Add global gitignore
+cp configs/.gitignore_global ~
+git config --global core.excludesfile ~/.gitignore_global
+
 # -----------------------------------------------------------------------------
 # Install Vim plugins (need to use Git)
 # -----------------------------------------------------------------------------
