@@ -6,8 +6,11 @@ sudo apt-get update && \
 sudo apt-get -y upgrade && \
 sudo apt-get install -y build-essential && \
 sudo apt-get install -y software-properties-common && \
-sudo apt-get install -y byobu curl git htop man unzip vim wget && \
+sudo apt-get install -y byobu curl git htop man unzip vim wget ack-grep && \
 sudo rm -rf /var/lib/apt/lists/*
+
+# Rename `ack-grep` to `ack`
+sudo dpkg-divert --local --divert /usr/bin/ack --rename --add /usr/bin/ack-grep
 
 # -----------------------------------------------------------------------------
 # Install oh-my-zsh
