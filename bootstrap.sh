@@ -165,3 +165,15 @@ git clone https://github.com/scrooloose/nerdtree.git
 # -----------------------------------------------------------------------------
 # After add, open vim and run command `:source ~/.vimrc`
 cp configs/.vimrc ~/.vimrc
+
+# -----------------------------------------------------------------------------
+# Install ruby via rvm
+# -----------------------------------------------------------------------------
+sudo apt-get install curl && \
+\curl -sSL https://get.rvm.io | bash -s stable --auto-dotfiles && \
+source ~/.rvm/scripts/rvm && \
+rvm requirements && \
+rvm install ruby && \
+rvm use ruby default && \
+rvm rubygems current && \
+gem install rails
