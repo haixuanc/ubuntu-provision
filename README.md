@@ -9,7 +9,7 @@ In terminal run the bootstrap script to install a list of development softwares:
 sudo ./bootstrap.sh
 ```
 
-## What are installed
+## What will be installed
 
 - Essential linux commandline softwares
 - Oh-my-zsh
